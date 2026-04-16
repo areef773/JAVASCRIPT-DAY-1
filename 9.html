@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>var, let, const Test</title>
+</head>
+<body>
+
+  <h2>var, let, and const Test</h2>
+  <p id="output"></p>
+
+  <script>
+    // var (can be redeclared and updated)
+    var a = 10;
+    var a = 20; // allowed
+    a = 30;     // allowed
+
+    // let (cannot be redeclared, but can be updated)
+    let b = 40;
+    b = 50;     // allowed
+    // let b = 60; // not allowed (would cause error)
+
+    // const (cannot be redeclared or updated)
+    const c = 70;
+    // c = 80; // not allowed (would cause error)
+
+    let result = "";
+    result += "var a = " + a + "<br>";
+    result += "let b = " + b + "<br>";
+    result += "const c = " + c + "<br>";
+
+    document.getElementById("output").innerHTML = result;
+  </script>
+
+</body>
+</html>

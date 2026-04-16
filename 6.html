@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Example</title>
+</head>
+<body>
+
+  <h2>Current Year</h2>
+  <p id="year"></p>
+
+  <h2>Comparison of Two Numbers</h2>
+  <p id="comparison"></p>
+
+  <script>
+    // Display current year
+    const currentYear = new Date().getFullYear();
+    document.getElementById("year").textContent = "Year: " + currentYear;
+
+    // Compare two numbers
+    let a = 10;
+    let b = 20;
+
+    let result = "";
+    result += "a == b: " + (a == b) + "<br>";
+    result += "a != b: " + (a != b) + "<br>";
+    result += "a > b: " + (a > b) + "<br>";
+    result += "a < b: " + (a < b) + "<br>";
+    result += "a >= b: " + (a >= b) + "<br>";
+    result += "a <= b: " + (a <= b) + "<br>";
+
+    document.getElementById("comparison").innerHTML = result;
+  </script>
+
+</body>
+</html>
